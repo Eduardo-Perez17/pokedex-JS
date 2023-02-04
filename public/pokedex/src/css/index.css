@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid-father {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+}
+
+.grid-son {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+    .grid-father {
+        display: grid;
+        grid-template-columns: 120px 1fr 120px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .grid-father {
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-father {
+        display: grid;
+        grid-template-columns: 180px 1fr 180px;
+    }
+}

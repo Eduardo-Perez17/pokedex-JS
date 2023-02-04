@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Pokemon - Pokedex</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="grid-father header-father">
+			<div class="grid-son header-son">
+				<header><h1>Pokedex</h1></header>
+			</div>
+		</div>
+
+		<div class="grid-father article_header-father">
+			<div class="grid-son article_header-son">
+				<div class="article_header">
+					<form>
+						<input type="text" name="input" id="input" class="input" required>
+						<span>Name or Id</span>
+						<button type="button" id="search" name="boton" class="boton">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-father article-father">
+			<div class="grid-son article-son" id="container_article">
+				<article id="container">
+					<div class="card_pokemon" id="card"></div>
+					<div class="buttons" id="buttons"></div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="../src/css/header-article.css">
+    <link rel="stylesheet" href="../src/css/article.css">
+
+    <script src="../src/css/index.js"></script>
+</body>
+</html>

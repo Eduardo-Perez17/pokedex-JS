@@ -1,0 +1,258 @@
+/* HACER UN BOTON DE SUBIDA EN LA ESQUINA DEL VIEWPORT */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../font/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-size: contain;
+}
+
+.mode {
+  background-color: #060c22;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cbcbcb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9d3333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  margin-bottom: 100px;
+  background-color: #9d3333;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+header img {
+  width: 200px;
+}
+
+.main_pikachu {
+  background-color: #e9e7e7;
+  margin-bottom: 50px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 1px 1px 8px #333;
+}
+
+.input {
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid #333;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+}
+
+.pikachu {
+  margin-right: 10px;
+}
+
+.img_search {
+  padding: 0 5px;
+  width: 30px;
+}
+
+.container-name {
+  height: 250px;
+}
+
+.main_pikachu bottom {
+  cursor: pointer;
+}
+
+
+.container-name img {
+  width: 80px;
+  max-width: 100%;
+  padding: 20px 0;
+  display: block;
+  margin: auto;
+}
+
+.article-son {
+  background-color: #fff;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.article {
+  min-height: 220vh;
+}
+.article-father {
+  display: grid;
+  margin: 30px 0;
+  grid-template-columns: 30px 5fr 30px;
+}
+
+.container-item { 
+  margin: 30px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #656565;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.container-item:hover {
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.34);
+  transform: scale(1.02);
+} 
+
+.container-details {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color .3s ease-in-out;
+}
+
+.container-details div {
+  padding: 10px 0;
+}
+
+.container-details div img{
+  margin: 15px 0;
+}
+
+.name_id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#search {
+  cursor: pointer;
+}
+
+.up {
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: fixed;
+  padding: 10px;
+  top: 620px;
+  left: 20px;
+}
+
+.text_err {
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.text_err h2 {
+  font-size: 40px;
+}
+
+.img_err img {
+  margin: 30px 0;
+}
+
+.btn {  
+  background-color: #9d3333;
+  border-radius: 2px;
+  padding: 5px 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  
+  article {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .article-father {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 50px 5fr 50px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  article {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .article-father {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 70px 5fr 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  
+  article {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .article-father {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 90px 5fr 90px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .main_pikachu {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+  article {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .article-father {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 110px 5fr 110px;
+  }
+}
